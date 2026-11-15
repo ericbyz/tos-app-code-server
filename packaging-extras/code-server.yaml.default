@@ -1,0 +1,6 @@
+# code-server 配置(TOS 封装默认值)
+# 登录密码:安装时由 postinst 生成并写入 password 字段,同时打印在安装日志
+bind-addr: "0.0.0.0:18225"
+auth: password
+password: "__CODESERVER_PASSWORD__"
+cert: false

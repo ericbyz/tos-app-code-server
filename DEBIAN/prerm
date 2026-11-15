@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+APPID="code-server"
+case "$1" in
+    remove|deconfigure)
+        pkill -u "${APPID}" 2>/dev/null || true
+        sleep 1
+        systemctl stop "code-server.service" 2>/dev/null || true
+        systemctl disable "code-server.service" 2>/dev/null || true
+        ;;
+    upgrade|failed-upgrade) ;;
+    *) ;;
+esac
+exit 0

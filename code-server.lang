@@ -1,0 +1,155 @@
+[zh-cn]
+name = "code-server 网页版 VS Code"
+auth = "ericbyz"
+descript = "在 NAS 上运行 VS Code,局域网内任意浏览器即可打开(上游 coder/code-server,自包含运行时,无需系统 Node)。预配置 18225 端口与密码认证,安装时自动生成密码并保存于 /etc/code-server/config.yaml。适合远程改配置、写脚本、轻量开发。"
+note = "1. 将上游 coder/code-server 封装为 TOS 应用中心应用。"
+
+[zh-hk]
+name = "code-server 網頁版 VS Code"
+auth = "ericbyz"
+descript = "在 NAS 上運行 VS Code,局域網內任意瀏覽器即可打開(上游 coder/code-server,自包含運行時,無需系統 Node)。預配置 18225 端口與密碼認證,安裝時自動生成密碼並保存於 /etc/code-server/config.yaml。適合遠程改配置、寫腳本、輕量開發。"
+note = "1. 将上游 coder/code-server 封装为 TOS 应用中心应用。"
+
+[en-us]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[ko-kr]
+name = "code-server"
+auth = "ericbyz"
+descript = "NAS에서 VS Code를 실행하고 LAN의 모든 브라우저에서 여는 code-server입니다(업스트림 coder/code-server, 자체 Node 런타임 포함). 포트 18225과 비밀번호 인증이 사전 구성되며, 생성된 비밀번호는 /etc/code-server/config.yaml에 저장됩니다."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[ja-jp]
+name = "code-server"
+auth = "ericbyz"
+descript = "NAS 上で VS Code を動かし、LAN 内の任意のブラウザから開ける code-server(上流 coder/code-server、Node ランタイム同梱の自己完結パッケージ)。ポート 18225・パスワード認証を事前設定し、生成したパスワードは /etc/code-server/config.yaml に保存されます。"
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[de-de]
+name = "code-server"
+auth = "ericbyz"
+descript = "VS Code auf der NAS ausführen und aus jedem Browser im LAN öffnen (upstream coder/code-server, eigenständig mit mitgelieferter Node-Laufzeit). Vorkonfiguriert auf Port 18225 mit Passwort-Authentifizierung; das generierte Passwort steht in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[fr-fr]
+name = "code-server"
+auth = "ericbyz"
+descript = "Exécutez VS Code sur le NAS et ouvrez-le depuis n'importe quel navigateur du LAN (upstream coder/code-server, autonome avec son runtime Node). Préconfiguré sur le port 18225 avec authentification par mot de passe ; le mot de passe généré est dans /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[it-it]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[es-es]
+name = "code-server"
+auth = "ericbyz"
+descript = "Ejecute VS Code en la NAS y ábralo desde cualquier navegador de la LAN (upstream coder/code-server, autocontenido con su propio runtime Node). Preconfigurado en el puerto 18225 con autenticación por contraseña; la contraseña generada queda en /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[hu-hu]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[pl-pl]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[tr-tr]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[ru-ru]
+name = "code-server"
+auth = "ericbyz"
+descript = "Запускайте VS Code на NAS и открывайте из любого браузера в LAN (upstream coder/code-server, самодостаточный со своим Node). Преднастроен на порт 18225 с паролем; сгенерированный пароль хранится в /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[pt-pt]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[cs-cz]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[da-dk]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[nl-nl]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[nb-no]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[sv-se]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[el-gr]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[ro-ro]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[th-th]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[vi-vn]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[id-id]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[ar-sa]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."
+
+[he-il]
+name = "code-server"
+auth = "ericbyz"
+descript = "Run VS Code on the TNAS and open it from any browser on the LAN (upstream coder/code-server, self-contained with its own Node runtime). Preconfigured on port 18225 with password authentication; the generated password is shown at install time and kept in /etc/code-server/config.yaml."
+note = "1. Repackaged upstream coder/code-server for the TOS App Center."

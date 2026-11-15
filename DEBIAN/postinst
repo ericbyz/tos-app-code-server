@@ -1,0 +1,41 @@
+#!/bin/bash
+# Post-installation script — runs after the package is installed
+set -e
+
+APPID="code-server"
+APP_DIR="/usr/local/${APPID}"
+
+if ! id -u "${APPID}" > /dev/null 2>&1; then
+    useradd --system --no-create-home --shell /usr/sbin/nologin "${APPID}" 2>/dev/null || true
+fi
+
+chown -R "${APPID}:${APPID}" "${APP_DIR}" 2>/dev/null || true
+
+# Config + data dirs
+mkdir -p /etc/code-server /var/lib/code-server 2>/dev/null || true
+
+# Seed config.yaml with a generated password (first install only)
+if [ ! -f /etc/code-server/config.yaml ]; then
+    CS_PWD="$(tr -dc A-Za-z0-9 </dev/urandom 2>/dev/null | head -c 20)"
+    [ -n "${CS_PWD}" ] || CS_PWD="cs-$(head -c 5 /dev/urandom | od -An -tx1 | tr -d ' \n')"
+    sed "s/__CODESERVER_PASSWORD__/${CS_PWD}/" "${APP_DIR}/code-server.yaml.default" > /etc/code-server/config.yaml
+    echo "code-server: http://<NAS>:18225 password=${CS_PWD} (config: /etc/code-server/config.yaml)"
+fi
+
+chown -R "${APPID}:${APPID}" /etc/code-server /var/lib/code-server 2>/dev/null || true
+chmod 640 /etc/code-server/config.yaml 2>/dev/null || true
+
+case "$1" in
+    configure)
+        if [ -n "$2" ]; then
+            echo "${APPID}: upgrading from version $2"
+        fi
+        systemctl daemon-reload 2>/dev/null || true
+        systemctl enable "code-server.service" 2>/dev/null || true
+        systemctl start "code-server.service" 2>/dev/null || true
+        ;;
+    *) ;;
+esac
+
+echo "${APPID} installed successfully."
+exit 0

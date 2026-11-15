@@ -1,0 +1,39 @@
+[Unit]
+Description=code-server - VS Code in the Browser (TOS)
+After=network.target
+StartLimitBurst=5
+StartLimitIntervalSec=60
+
+[Service]
+Type=simple
+User=code-server
+Group=code-server
+EnvironmentFile=/usr/local/code-server/code-server.env
+ExecStart=/usr/local/code-server/bin/code-server --config /etc/code-server/config.yaml
+TimeoutStartSec=60
+TimeoutStopSec=15
+
+# Security hardening (TOS 7 review requires NoNewPrivileges/ProtectSystem/ProtectHome;
+# Restart= is intentionally omitted — service lifecycle is managed by the platform)
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictRealtime=true
+MemoryDenyWriteExecute=false
+LockPersonality=true
+RestrictSUIDSGID=true
+RemoveIPC=true
+SystemCallArchitectures=native
+
+# code-server writes user data under CODESERVER_DATA_DIR only
+ReadWritePaths=/var/lib/code-server
+
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

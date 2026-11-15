@@ -1,0 +1,14 @@
+Package: code-server
+Version: 4.145.2
+Architecture: amd64
+Section: devel
+Priority: optional
+Maintainer: ericbyz <ericbyz@users.noreply.github.com>
+Depends: systemd
+Description: VS Code in the browser (code-server) for TOS
+ Run VS Code on the TNAS and access it from any browser on the LAN.
+ Packages upstream coder/code-server (self-contained, bundles its own
+ Node runtime) with a preconfigured service on port 18225 and
+ password authentication; the generated password is printed at
+ install time and stored in /etc/code-server/config.yaml.
+ Upstream project: https://github.com/coder/code-server (MIT).

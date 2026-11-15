@@ -1,0 +1,16 @@
+This product (TOS App Center packaging of code-server) includes software developed
+by the code-server project:
+
+  code-server - LAN DNS ad-blocker (original app)
+  https://github.com/ericbyz/code-server
+  Copyright 2026 code-server contributors
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+The packaged binary is the unmodified `code-server` artifact published in the
+upstream project's GitHub Releases; its SHA256 is pinned in the UPSTREAM
+file of this repository. The TOS packaging metadata, build scripts and
+documentation in this repository are licensed under the Apache License 2.0.
